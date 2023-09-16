@@ -18,7 +18,7 @@ def android_get_desired_capabilities():
         'platformVersion': '13',
         'resetKeyboard': True,
         'systemPort': 8301,
-        'takesScreenshot': False,
+        'takesScreenshot': True,
         'udid': get_UDID_dynamically(),
         'appPackage': 'com.ajaxsystems',
         'appActivity': 'com.ajaxsystems.ui.activity.LauncherActivity',

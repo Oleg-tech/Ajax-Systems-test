@@ -11,16 +11,16 @@ class LoginPage(Page):
 
     def perform_log_in(self, email: str, password: str):
         # Press "Log In" button
-        self.driver.click_app_element(locator=login_button)
+        self.click_app_element(element_location=login_button)
 
         # Fill Email field
-        self.driver.fill_app_input(locator=email_field, email=email)
+        self.fill_app_input(element_location=email_field, value=email)
 
         # Fill Password field
-        self.driver.fill_app_input(locator=password_field, password=password)
+        self.fill_app_input(element_location=password_field, value=password)
 
         # Press "Log In"(Submit) button
-        self.driver.click_app_element(locator=submit_form_button)
+        self.click_app_element(element_location=submit_form_button)
 
     def find_main_menu(self):
         try:
